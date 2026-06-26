@@ -293,6 +293,23 @@
       margin: 0 auto;
     }
 
+    /* ── VIDEO ── */
+    .video-wrapper {
+      max-width: 640px;
+      margin: 0 auto 48px;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      box-shadow: var(--shadow-product);
+      background: var(--color-bone);
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
     /* ── ABOUT ── */
     .about-text {
       max-width: 640px;
@@ -592,9 +609,20 @@
   <section class="section alt">
     <div class="section-inner">
       <div class="section-headline">
-        <h2>Über mich.</h2>
+        <h2>Über mich</h2>
         <p>Strukturiertes Denken trifft digitale Neugier.</p>
       </div>
+      <!-- YouTube-Platzhalter: VIDEO-ID durch echte YouTube-ID ersetzen, z.B. src="https://www.youtube.com/embed/dQw4w9WgXcQ" -->
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO-ID-HIER-EINSETZEN"
+          title="Luis Schmidt stellt sich vor"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
       <div class="about-text">
         <p>
           Ich bin Luis Schmidt, 18 Jahre, und bewerbe mich um eine kaufmännische Ausbildung.
@@ -616,14 +644,15 @@
   <section class="section cloud" id="staerken">
     <div class="section-inner">
       <div class="section-headline">
-        <h2>Was ich mitbringe.</h2>
+        <h2>Was ich mitbringe</h2>
         <p>Fähigkeiten, die vom ersten Tag an einen Unterschied machen.</p>
       </div>
       <div class="card-grid">
 
-        <div class="card-eyebrow">
+        <div class="card">
+          <P class=""card-eyebrow">Fähigkeit</P>
           <h3>Digitale Affinität & KI</h3>
-          <p>Microsoft 365, Informatik-Grundlagen und sicherer Umgang mit ChatGPT (OpenAI-Abo) — KI-Kenntnisse zählen heute zu den gefragtesten Qualifikationen im kaufmännischen Bereich, und ich bringe sie bereits mit.</p>
+          <p>Microsoft 365, Informatik-Grundlagen und sicherer Umgang mit ChatGPT.</p>
         </div>
 
         <div class="card">
@@ -652,7 +681,7 @@
   <section class="section alt">
     <div class="section-inner">
       <div class="section-headline">
-        <h2>Kenntnisse.</h2>
+        <h2>Kenntnisse</h2>
       </div>
       <div class="skills-grid">
 
@@ -701,7 +730,7 @@
   <section class="section cloud" id="bildung">
     <div class="section-inner">
       <div class="section-headline">
-        <h2>Bildungsweg.</h2>
+        <h2>Bildungsweg</h2>
       </div>
       <div class="timeline">
 
@@ -711,7 +740,7 @@
             <h3>Gymnasiale Oberstufe</h3>
             <p class="tl-org">Fritz-Winter-Gesamtschule, Ahlen</p>
             <ul>
-              <li>Erwerb der vollen Fachhochschulreife</li>
+              <li>Erneuter Versuch erwerb Abitur.</li>
             </ul>
           </div>
         </div>
@@ -746,7 +775,7 @@
   <section class="section alt" id="erfahrung">
     <div class="section-inner">
       <div class="section-headline">
-        <h2>Erfahrung.</h2>
+        <h2>Erfahrung</h2>
         <p>Erste Einblicke, die zeigen, worauf es ankommt.</p>
       </div>
       <div class="timeline">
@@ -792,7 +821,7 @@
   <section class="contact-section" id="kontakt">
     <div class="section-inner">
       <div class="section-headline">
-        <h2>Kontakt.</h2>
+        <h2>Kontakt</h2>
         <p>Ich freue mich auf ein Gespräch.</p>
       </div>
       <div class="contact-grid">
